@@ -35,8 +35,11 @@ page: '/'
 
 ## Notes
 
+* The error does not occur on Next.js versions prior to 14.2
+* It occurs on the latest canary version too (tested `v14.3.0-canary.21`)
 * I couldn't recreate the error when building/running locally
 * I couldn't recreate this issue without using PNPM
+* The error doesn't seem to occur on pages using `export const runtime = 'edge'`
 * A couple of "workarounds" I found while investigating
   * Installing `undici` in the app
   * Using `await import('@firebase/auth')` etc to prevent server-level import of these modules
