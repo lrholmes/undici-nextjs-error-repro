@@ -6,6 +6,7 @@ export default async function Home() {
     <main>
       <h1>undici</h1>
       <p>This page, set to revalidate every 10 seconds, was last rendered at {new Date().toString()}.</p>
+      <p>Check the Vercel deployment logs and see if there's an error 👀</p>
     </main>
   );
 }
